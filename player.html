@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind를 활용한 블로그</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-full">
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-8 w-8"
+                                src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-flaming-realistic-baseball-ball-on-fire-flying-through-the-air-burning-png-image_5222107.jpg"
+                                alt="상단로고">
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="index.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">홈으로</a>
+
+                                <a href="about.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">자기소개</a>
+
+                                <a href="project.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">포트폴리오</a>
+
+                                <a href="hobby.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">관심사</a>
+
+                                <a href="player.html"
+                                    class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">선수소개</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-4 flex items-center md:ml-6">
+                            <button type="button"
+                                class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                <span class="sr-only">View notifications</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                                </svg>
+                            </button>
+
+                            <!-- Profile dropdown -->
+                            <div class="relative ml-3">
+                                <div>
+                                    <button type="button"
+                                        class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                        id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                        <span class="sr-only">Open user menu</span>
+                                        <img class="h-8 w-8 rounded-full" src="photo.jpg" alt="내프로필">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-white shadow">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">찌우픽💫 야구선수들⚾</h1>
+            </div>
+        </header>
+    </div>
+    <div class="bg-white">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900">우리 선수들을 소개합니다~!</h2>
+
+            <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n12.jpg" alt="김건희"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/pitcher/view.do?num=448">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    김건희
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">투수 겸 타자</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.12</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n97.jpg" alt="이명종"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/pitcher/view.do?num=430">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    이명종
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">투수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.97</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n41.jpg" alt="안우진"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/pitcher/view.do?num=341">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    안우진
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">투수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.41</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n61.jpg" alt="짱재영"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/pitcher/view.do?num=406">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    장재영
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">투수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.61</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n44.jpg" alt="동허니"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/catcher/view.do?num=455">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    김동헌
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">포수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.44</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n2.jpg" alt="김태진"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/infielder/view.do?num=443">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    김태진
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">내야수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.2</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n35.jpg" alt="임병욱"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/outfielder/view.do?num=205">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    임병욱
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">외야수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.35</p>
+                    </div>
+                </div>
+                <div class="group relative">
+                    <div
+                        class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                        <img src="n8.jpg" alt="이승원"
+                            class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                    </div>
+                    <div class="mt-4 flex justify-between">
+                        <div>
+                            <h3 class="text-sm text-gray-700">
+                                <a href="https://www.heroesbaseball.co.kr/players/infielder/view.do?num=457">
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
+                                    이승원
+                                </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">유격수</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">No.8</p>
+                    </div>
+                </div>
+                <!-- More products... -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

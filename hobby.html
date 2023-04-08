@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind를 활용한 블로그</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-full">
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-8 w-8"
+                                src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-flaming-realistic-baseball-ball-on-fire-flying-through-the-air-burning-png-image_5222107.jpg"
+                                alt="상단로고">
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="index.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">홈으로</a>
+
+                                <a href="about.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">자기소개</a>
+
+                                <a href="project.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">포트폴리오</a>
+
+                                <a href="hobby.html"
+                                    class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">관심사</a>
+
+                                <a href="player.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">선수소개</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-4 flex items-center md:ml-6">
+                            <button type="button"
+                                class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                <span class="sr-only">View notifications</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                                </svg>
+                            </button>
+
+                            <!-- Profile dropdown -->
+                            <div class="relative ml-3">
+                                <div>
+                                    <button type="button"
+                                        class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                        id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                        <span class="sr-only">Open user menu</span>
+                                        <img class="h-8 w-8 rounded-full" src="photo.jpg" alt="내프로필">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-white shadow">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">찌우는 요즘..</h1>
+            </div>
+        </header>
+        <div class="bg-white">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-10 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">2023 최대 관심사
+                    </h2>
+                    <p class="mt-4 text-gray-500">지난 가을 준플레이오프를 우연히 본 지우는 그만 야구에 빠져버리고 마는데.. 야구의 야자도 모르고 야구 중계 때문에 즐겨보던
+                        티비 프로그램이 결방을 해서 야구를 싫어하던 지우가 어쩌다.. 어쩌다보니 그렇게 됐다ㅋ</p>
+
+                    <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">구단</dt>
+                            <dd class="mt-2 text-sm text-gray-500">그녀가 응원하는</dd>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">키움 히어로즈</dt>
+                            <dd class="mt-2 text-sm text-gray-500">연고지 서울</dd>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">선수</dt>
+                            <dd class="mt-2 text-sm text-gray-500">그녀가 가장 좋아하는</dd>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">장재영</dt>
+                            <dd class="mt-2 text-sm text-gray-500">아기유리너구리 투수</dd>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">응원가</dt>
+                            <dd class="mt-2 text-sm text-gray-500">그녀가 신나하는</dd>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900"></dt>
+                            <dd class="mt-2 text-sm text-gray-500">김웅빈~김웅빈! 히어로즈 김웅빈~<br>
+                                히어로즈 승리를 위!하!여!<br> 날려버려 저 멀리~~🎵
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MjdfMjgz%2FMDAxNjU2Mjk0OTI4ODE4.vYHpIr0wU424TlVRenESUqtCIoS4isZ2u8YgFTf6vugg.YsY-3824KXM3xu2y2gy6Ijq42lz0e8uHgkwWZpGZ_X0g.JPEG.qorakdydqud%2F%25B4%25D9%25BF%25EE%25B7%25CE%25B5%25E5%25C6%25C4%25C0%25CF%25A3%25DF20220627%25A3%25DF100328.jpg&type=sc960_832"
+                        alt="히어로즈" class="rounded-lg bg-gray-100">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MTRfMzMg%2FMDAxNjYzMTM4MTQ3MDE0.1lIeHXwCSp90GjzkHCdwfzjKLmyJtqmokvIV-OS2PuQg.g1e72ELtr_LvrIZbYQQ-grkA3vU5aE7J-6NgcyD4VDQg.JPEG.collagengirl%2FIMG_3896.JPG&type=sc960_832"
+                        alt="야구공" class="rounded-lg bg-gray-100">
+                    <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fbaseball-equipment-vector-id523213393%3Fk%3D20%26m%3D523213393%26s%3D612x612%26w%3D0%26h%3Dkd2B6snjZ2LlZtOfik2KPufpynQnbv8o9PjSWXjYSBE%3D&type=sc960_832"
+                        alt="장비" class="rounded-lg bg-gray-100">
+                    <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fus.123rf.com%2F450wm%2Fjemastock%2Fjemastock1708%2Fjemastock170813783%2F84630621-field-baseball-related-icon-image-vector-illustration-design.jpg%3Fver%3D6&type=sc960_832"
+                        alt="야구장" class="rounded-lg bg-gray-100">
+                </div>
+            </div>
+        </div>
+
+    </div>
